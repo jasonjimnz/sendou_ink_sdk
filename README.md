@@ -124,4 +124,5 @@ Published docs: https://jasonjimnz.github.io/sendou_ink_sdk/
 - `docs/playground.md` for local playground instructions
 - `docs/configuration.md` for runtime configuration
 - `docs/reference.md` for method and model reference
+- `CHANGELOG.md` for release notes
 

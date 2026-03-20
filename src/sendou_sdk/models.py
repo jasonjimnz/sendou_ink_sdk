@@ -272,9 +272,9 @@ class GetTournamentMatchResponse(BaseModel):
 class TournamentBracketMeta(BaseModel):
     """Bracket-level metadata for structure and grouping."""
 
-    teams_per_group: int | None = Field(alias="teamsPerGroup")
-    group_count: int | None = Field(alias="groupCount")
-    round_count: int | None = Field(alias="roundCount")
+    teams_per_group: int | None = Field(default=None, alias="teamsPerGroup")
+    group_count: int | None = Field(default=None, alias="groupCount")
+    round_count: int | None = Field(default=None, alias="roundCount")
 
 
 class TournamentBracketTeamsEntry(BaseModel):
