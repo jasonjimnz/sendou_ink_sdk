@@ -2,6 +2,8 @@
 
 Async Python SDK for the sendou.ink public API.
 
+Current version: `1.0.1`
+
 ## Installation
 
 ```bash
@@ -107,6 +109,22 @@ python -m build --wheel
 python -m twine check dist/*
 ```
 
+## Releases
+
+Releases are automated with GitHub Actions:
+
+- `deploy-docs.yml` deploys documentation to GitHub Pages.
+- `release-tag-publish.yml` deploys docs for the tag, validates the tag version against `pyproject.toml`, builds distributions, and publishes to PyPI.
+
+Create a release tag (example):
+
+```powershell
+git tag [VERSION] # e.g. git tag v1.0.1
+git push origin [VERSION] # e.g. git push origin v1.0.1
+```
+
+For tagged releases, keep `CHANGELOG.md` updated before pushing the tag.
+
 ## Features
 
 - Async-first client built on httpx
@@ -124,5 +142,6 @@ Published docs: https://jasonjimnz.github.io/sendou_ink_sdk/
 - `docs/playground.md` for local playground instructions
 - `docs/configuration.md` for runtime configuration
 - `docs/reference.md` for method and model reference
+- `docs/releasing.md` for release automation and tag flow
 - `CHANGELOG.md` for release notes
 

@@ -41,14 +41,14 @@ For a live end-to-end example using environment variables, see `playground.py` a
 - `playground.md`: local runnable script instructions
 - `configuration.md`: token, base URL, and timeout options
 - `reference.md`: method signatures, response/request models, and errors
+- `releasing.md`: tag-based release and PyPI publish automation
+- `../CHANGELOG.md`: release notes
 
 ## Deploying docs
 
-Publish to GitHub Pages by pushing the contents of `site/` after running:
+Documentation is deployed automatically by GitHub Actions workflow `deploy-docs.yml`.
 
-```bash
-mkdocs build
-```
+For tagged releases, workflow `release-tag-publish.yml` deploys docs and then publishes the package to PyPI.
 
 ## Resources
 

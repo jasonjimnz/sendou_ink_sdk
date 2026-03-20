@@ -8,6 +8,7 @@ nav:
   - Playground: playground.md
   - Configuration: configuration.md
   - Reference: reference.md
+  - Releasing: releasing.md
 theme:
   name: material
 markdown_extensions:
