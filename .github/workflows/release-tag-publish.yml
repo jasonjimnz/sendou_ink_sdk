@@ -54,6 +54,7 @@ jobs:
     name: Publish package to PyPI
     needs: deploy_docs
     runs-on: ubuntu-latest
+    environment: pypi
     permissions:
       contents: read
       id-token: write
