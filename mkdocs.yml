@@ -1,0 +1,17 @@
+site_name: Sendou.ink SDK
+repo_url: https://github.com/jasonjimnz/sendou_ink_sdk
+repo_name: jasonjimnz/sendou_ink_sdk
+site_url: https://jasonjimnz.github.io/sendou_ink_sdk/
+nav:
+  - Home: index.md
+  - Usage: usage.md
+  - Playground: playground.md
+  - Configuration: configuration.md
+  - Reference: reference.md
+theme:
+  name: material
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
